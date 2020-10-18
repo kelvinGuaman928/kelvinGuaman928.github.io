@@ -1,4 +1,3 @@
-
 *{
   margin: 0px;
   padding: 0px;
@@ -278,34 +277,55 @@ nav{
 }
 ._grid{
   display: grid;
-  justify-content: center;
-  grid-column-gap: 50px;
+  grid-column-gap: 20px;
   grid-template-columns: auto auto auto;
+  /*grid-template-columns: auto auto auto;*/
   row-gap: 20px;
   margin-top: 50px;
 
 }
 .grid_items{
   height: 50vh;
-  width:40vh;
+  width:60vh;
   background-color: rgb(23 42 69);
-  color:rgb(204, 214, 246);
-
+  color:rgb(204, 214, 246); /*#CCD6F6 */
   box-shadow: 0px 0 16px 0 rgba(0,0,0,1);
 
 }
 .grid_items img{
-  width: 100%;
-  height: 50%;
-  object-fit: contain;
+  position: sticky;
+  margin-left: 10px;
+  left: 30px;
+  top: 100%;
 }
 .grid_items:hover{
     box-shadow: 16px 0px 16px 0 rgba(0,0,0,1);
     transform: translateY(-10px);
 }
-.grid_items p{
+.grid_content h1{
   margin-top: 20px;
   text-align: center;
+  font-size: 2em;
+}
+.grid_content p {
+  padding: 20px;
+  font-size: 18px;
+  text-align:left;
+  margin-left: 30px;
+}
+.grid_img {
+  display: flex;
+  justify-content: flex-end;
+}
+.grid_soft{
+  display: flex;
+  align-items: flex-end;
+  margin: 20px 0px 0px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+
+
+
 }
 
 .skills {
